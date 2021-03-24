@@ -5,6 +5,7 @@ import java.util.List;
 public class OddNumbers {
 
     public static Integer sum(List<Integer> numbers) {
-        return null;
+        return numbers.stream().filter(num -> num % 2 != 0).mapToInt(num -> num).sum();
+
     }
 }
